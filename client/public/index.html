@@ -39,7 +39,8 @@
     class TextScramble {
       constructor(el) {
         this.el = el;
-        this.chars = "!<>-_\\/[]{}—=+*^?#________";
+        // this.chars = "!<>-_\\/[]{}—=+*^?#________";
+        this.chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         this.update = this.update.bind(this);
       }
       setText(newText) {
@@ -95,13 +96,16 @@
     // ——————————————————————————————————————————————————
 
     const phrases = [
-      "Hey there",
-      "I am Vishal Khandate ",
-      "I am Web Developer",
-      "From India",
+      "Hey there \n 👋🏽 ",
+      "Welcome to my website",
+      "I am Vishal Khandate 👦🏽",
+      "I am Web Developer ",
+      "From India ❤",
+      "Scroll to know more about me 👇🏽",
+      "🤘🏽",
       "",
     ];
-    const readTime = [800, 2000, 2000, 2000];
+    const readTime = [800, 2000, 2000, 2000, 2000, 2000, 2000];
 
     const el = document.querySelector(".main-text");
     const fx = new TextScramble(el);
