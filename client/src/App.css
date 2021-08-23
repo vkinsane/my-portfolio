@@ -1,5 +1,30 @@
+@font-face {
+  font-family: Electronica_Display_Solid;
+  src: url("./Assets/fonts/graviton-electronicadisplaysolid.otf");
+}
+@font-face {
+  font-family: Hammersmith_One;
+  src: url("./Assets/fonts/HammersmithOne-Regular.ttf");
+}
+.description-text {
+  font-family: Hammersmith_One;
+  /* font-size: 50px; */
+  font-size: calc(1.5vw + 15px);
+}
+.main-text {
+  /* font-size: 70px; */
+  font-size: calc(3vw + 30px);
+}
 .App {
+  font-family: Electronica_Display_Solid;
   text-align: center;
+  background-image: url("./Assets/imgs/bg-main.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 700px) {
+  .App {
+    background-image: url("./Assets/imgs/bg-mobile.jpg");
+  }
 }
 
 .App-logo {
@@ -12,9 +37,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +58,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
